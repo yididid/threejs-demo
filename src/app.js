@@ -1,8 +1,8 @@
 import * as THREE from 'three'
-import { AxesHelper, PerspectiveCamera, Scene, WebGLRenderer } from 'three'
+import { AxesHelper, BoxGeometry, Mesh, MeshBasicMaterial, PerspectiveCamera, Scene, TextureLoader, WebGLRenderer } from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-let scene, camera, renderer, controls;
-
+let scene, camera, renderer, controls, mesh;
+import dol from './public/dol.jpg'
 //初始化场景
 function initScene () {
   scene = new Scene()
@@ -17,13 +17,15 @@ function initCamera () {
 
 //初始化渲染器
 function initRenderer () {
-  renderer = new WebGLRenderer
+  renderer = new WebGLRenderer({
+    antialias: true//抗锯齿
+  })
   renderer.setSize(window.innerWidth, window.innerHeight)//设置渲染器大小
 
   document.body.appendChild(renderer.domElement)
 }
 
-function initAxesHelper () { //物体
+function initAxesHelper () { //坐标轴
   const axesHelper = new AxesHelper(3)//坐标轴可以变成3倍大小
   scene.add(axesHelper)
 }
@@ -32,13 +34,26 @@ function initOrbitControls () {//轨道控制器，可以拖动视角
   controls = new OrbitControls(camera, renderer.domElement)
 }
 
+function initMesh () {//物体
+  //形状
+  const geomety = new BoxGeometry(2, 2, 2)//长宽高
+  const texture = new TextureLoader().load(dol)//花纹
+  //材质
+  const material = new MeshBasicMaterial({
+    color: '',
+    map: texture
+  })
+  mesh = new Mesh(geomety, material)
+  scene.add(mesh)
+}
+
 function init () {
   initScene()
   initCamera()
   initRenderer()
   initAxesHelper()
   initOrbitControls()
-
+  initMesh()
 }
 
 init()

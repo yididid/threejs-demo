@@ -584,9 +584,12 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"bNKaB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _three = require("three");
 var _orbitControls = require("three/examples/jsm/controls/OrbitControls");
-let scene, camera, renderer, controls;
+var _dolJpg = require("./public/dol.jpg");
+var _dolJpgDefault = parcelHelpers.interopDefault(_dolJpg);
+let scene, camera, renderer, controls, mesh;
 //初始化场景
 function initScene() {
     scene = new (0, _three.Scene)();
@@ -600,7 +603,9 @@ function initCamera() {
 }
 //初始化渲染器
 function initRenderer() {
-    renderer = new (0, _three.WebGLRenderer);
+    renderer = new (0, _three.WebGLRenderer)({
+        antialias: true //抗锯齿
+    });
     renderer.setSize(window.innerWidth, window.innerHeight) //设置渲染器大小
     ;
     document.body.appendChild(renderer.domElement);
@@ -613,12 +618,27 @@ function initAxesHelper() {
 function initOrbitControls() {
     controls = new (0, _orbitControls.OrbitControls)(camera, renderer.domElement);
 }
+function initMesh() {
+    //形状
+    const geomety = new (0, _three.BoxGeometry)(2, 2, 2) //长宽高
+    ;
+    const texture = new (0, _three.TextureLoader)().load((0, _dolJpgDefault.default)) //花纹
+    ;
+    //材质
+    const material = new (0, _three.MeshBasicMaterial)({
+        color: "",
+        map: texture
+    });
+    mesh = new (0, _three.Mesh)(geomety, material);
+    scene.add(mesh);
+}
 function init() {
     initScene();
     initCamera();
     initRenderer();
     initAxesHelper();
     initOrbitControls();
+    initMesh();
 }
 init();
 function render() {
@@ -628,7 +648,7 @@ function render() {
 }
 render();
 
-},{"three":"ktPTu","three/examples/jsm/controls/OrbitControls":"7mqRv"}],"ktPTu":[function(require,module,exports) {
+},{"three":"ktPTu","three/examples/jsm/controls/OrbitControls":"7mqRv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./public/dol.jpg":"iNBCV"}],"ktPTu":[function(require,module,exports) {
 /**
  * @license
  * Copyright 2010-2023 Three.js Authors
@@ -32305,6 +32325,44 @@ class OrbitControls extends (0, _three.EventDispatcher) {
     }
 }
 
-},{"three":"ktPTu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["gbXMy","bNKaB"], "bNKaB", "parcelRequire54e0")
+},{"three":"ktPTu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iNBCV":[function(require,module,exports) {
+module.exports = require("487009ee280f97d2").getBundleURL("lPpKD") + "dol.715341e3.jpg" + "?" + Date.now();
+
+},{"487009ee280f97d2":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}]},["gbXMy","bNKaB"], "bNKaB", "parcelRequire54e0")
 
 //# sourceMappingURL=index.0641b553.js.map

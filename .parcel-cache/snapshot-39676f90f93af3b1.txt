@@ -1,4 +1,4 @@
-5527
+5531
 44D:\Ceshi\threejs-demo\node_modules\@lezer\lr133571164718089584 1
 60D:\Ceshi\threejs-demo\node_modules\svgo\plugins\prefixIds.js133555721559240000 0
 80D:\Ceshi\threejs-demo\node_modules\lmdb\node_modules\node-addon-api\node_api.gyp133571161547180000 0
@@ -21,7 +21,7 @@
 66D:\Ceshi\threejs-demo\node_modules\css-tree\lib\tokenizer\utils.js133555721381310000 0
 79D:\Ceshi\threejs-demo\node_modules\three\src\loaders\CompressedTextureLoader.js133571160575460000 0
 85D:\Ceshi\threejs-demo\node_modules\three\examples\jsm\nodes\display\ColorSpaceNode.js133571160575460000 0
-26D:\Ceshi\threejs-demo\dist133571185206486668 1
+26D:\Ceshi\threejs-demo\dist133571198790055574 1
 34D:\Ceshi\threejs-demo\node_modules133571164751720166 1
 84D:\Ceshi\threejs-demo\node_modules\ordered-binary\.nyc_output\processinfo\index.json133571161593280000 0
 69D:\Ceshi\threejs-demo\node_modules\css-tree\lib\common\TokenStream.js133555721381310000 0
@@ -38,7 +38,7 @@
 80D:\Ceshi\threejs-demo\node_modules\three\src\renderers\webgl\WebGLShaderCache.js133571160575460000 0
 66D:\Ceshi\threejs-demo\node_modules\@parcel\package-manager\LICENSE133571161451430000 0
 59D:\Ceshi\threejs-demo\node_modules\htmlparser2\package.json133571161869250000 0
-32D:\Ceshi\threejs-demo\src\app.js133571185204521922 0
+32D:\Ceshi\threejs-demo\src\app.js133571198785834832 0
 77D:\Ceshi\threejs-demo\node_modules\caniuse-lite\data\features\do-not-track.js133571161510800000 0
 62D:\Ceshi\threejs-demo\node_modules\three\src\math\Spherical.js133571160575460000 0
 80D:\Ceshi\threejs-demo\node_modules\three\examples\jsm\objects\InstancedPoints.js133571160575460000 0
@@ -58,7 +58,7 @@
 79D:\Ceshi\threejs-demo\node_modules\three\src\renderers\webgl\WebGLProperties.js133571160575460000 0
 50D:\Ceshi\threejs-demo\node_modules\clone\clone.iml133571161468000000 0
 96D:\Ceshi\threejs-demo\node_modules\three\examples\jsm\renderers\common\StorageBufferAttribute.js133571160575460000 0
-25D:\Ceshi\threejs-demo\src133571163303783232 1
+25D:\Ceshi\threejs-demo\src133571195342462496 1
 74D:\Ceshi\threejs-demo\node_modules\three\examples\jsm\loaders\MMDLoader.js133571160575460000 0
 85D:\Ceshi\threejs-demo\node_modules\@swc\helpers\src\_define_enumerable_properties.mjs133571161567110000 0
 88D:\Ceshi\threejs-demo\node_modules\three\examples\jsm\nodes\lighting\AmbientLightNode.js133571160575460000 0
@@ -610,7 +610,7 @@
 58D:\Ceshi\threejs-demo\node_modules\utility-types\README.md133571161512590000 0
 76D:\Ceshi\threejs-demo\node_modules\caniuse-lite\data\features\canvas-text.js133571161510800000 0
 78D:\Ceshi\threejs-demo\node_modules\caniuse-lite\data\features\sharedworkers.js133571161510800000 0
-48D:\Ceshi\threejs-demo\dist\index.0641b553.js.map133571185206466724 0
+48D:\Ceshi\threejs-demo\dist\index.0641b553.js.map133571198790035630 0
 82D:\Ceshi\threejs-demo\node_modules\three\examples\jsm\renderers\common\Bindings.js133571160575460000 0
 76D:\Ceshi\threejs-demo\node_modules\three\examples\jsm\nodes\math\MathNode.js133571160575460000 0
 60D:\Ceshi\threejs-demo\node_modules\parcel\src\.eslintrc.json133571161903060000 0
@@ -1109,6 +1109,7 @@
 97D:\Ceshi\threejs-demo\node_modules\@swc\helpers\_\_class_check_private_static_access\package.json133571161567110000 0
 77D:\Ceshi\threejs-demo\node_modules\three\src\renderers\webgl\WebGLClipping.js133571160575460000 0
 54D:\Ceshi\threejs-demo\node_modules\@swc\types\index.ts133571161577150000 0
+43D:\Ceshi\threejs-demo\dist\dol.715341e3.jpg133571198789217828 0
 79D:\Ceshi\threejs-demo\node_modules\three\src\renderers\webgl\WebGLGeometries.js133571160575460000 0
 65D:\Ceshi\threejs-demo\node_modules\@parcel\optimizer-htmlnano\src133571164726916482 1
 61D:\Ceshi\threejs-demo\node_modules\node-addon-api\common.gypi133571161518400000 0
@@ -1253,6 +1254,7 @@
 106D:\Ceshi\threejs-demo\node_modules\three\src\renderers\shaders\ShaderChunk\dithering_pars_fragment.glsl.js133571160575460000 0
 58D:\Ceshi\threejs-demo\node_modules\picocolors\package.json133555721322090000 0
 53D:\Ceshi\threejs-demo\node_modules\three\examples\jsm133571160638869092 1
+32D:\Ceshi\threejs-demo\src\public133571198495516689 1
 85D:\Ceshi\threejs-demo\node_modules\@parcel\utils\test\replaceBundleReferences.test.js133571161446660000 0
 98D:\Ceshi\threejs-demo\node_modules\three\src\renderers\shaders\ShaderChunk\opaque_fragment.glsl.js133571160575460000 0
 53D:\Ceshi\threejs-demo\node_modules\css-what\readme.md133555721561200000 0
@@ -2899,6 +2901,7 @@
 61D:\Ceshi\threejs-demo\node_modules\node-releases\package.json133555721330870000 0
 83D:\Ceshi\threejs-demo\node_modules\@swc\helpers\src\_initializer_warning_helper.mjs133571161567110000 0
 74D:\Ceshi\threejs-demo\node_modules\node-gyp-build-optional-packages\bin.js133571161567710000 0
+40D:\Ceshi\threejs-demo\src\public\dol.jpg132747840855025815 0
 81D:\Ceshi\threejs-demo\node_modules\node-gyp-build-optional-packages\build-test.js133571161567710000 0
 82D:\Ceshi\threejs-demo\node_modules\@babel\highlight\node_modules\has-flag\index.js131866355644719998 0
 75D:\Ceshi\threejs-demo\node_modules\node-gyp-build-optional-packages\LICENSE133571161567710000 0
@@ -4361,6 +4364,7 @@
 85D:\Ceshi\threejs-demo\node_modules\caniuse-lite\data\features\subresource-bundling.js133571161510800000 0
 69D:\Ceshi\threejs-demo\node_modules\@swc\helpers\src\_create_super.mjs133571161567110000 0
 71D:\Ceshi\threejs-demo\node_modules\caniuse-lite\data\features\srcset.js133571161510800000 0
+44D:\Ceshi\threejs-demo\dist\cat.1d6a4f2e.jpeg133571197831984148 0
 71D:\Ceshi\threejs-demo\node_modules\caniuse-lite\data\features\stream.js133571161510800000 0
 86D:\Ceshi\threejs-demo\node_modules\caniuse-lite\data\features\subresource-integrity.js133571161510800000 0
 68D:\Ceshi\threejs-demo\node_modules\caniuse-lite\data\features\sxg.js133571161510800000 0
@@ -5524,5 +5528,5 @@
 46D:\Ceshi\threejs-demo\node_modules\.bin\semver133571164743434660 0
 44D:\Ceshi\threejs-demo\node_modules\.bin\svgo133571164743504473 0
 62D:\Ceshi\threejs-demo\node_modules\.bin\update-browserslist-db133571164743554342 0
-44D:\Ceshi\threejs-demo\dist\index.0641b553.js133571185206347039 0
-37D:\Ceshi\threejs-demo\dist\index.html133571181229652061 0
+37D:\Ceshi\threejs-demo\dist\index.html133571198789088176 0
+44D:\Ceshi\threejs-demo\dist\index.0641b553.js133571198789915948 0
