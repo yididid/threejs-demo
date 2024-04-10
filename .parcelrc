@@ -1,0 +1,8 @@
+{
+  "extends": "@parcel/config-default",
+  "transformers": {
+    "*.{gltf,glb,png,jpg,obj,exr,max}": [
+      "@parcel/transformer-raw"
+    ]
+  }
+}

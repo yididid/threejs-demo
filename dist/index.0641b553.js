@@ -620,7 +620,7 @@ function initOrbitControls() {
 }
 function initMesh() {
     //形状
-    const geomety = new (0, _three.BoxGeometry)(2, 2, 2) //长宽高
+    const geomety = new (0, _three.BoxGeometry)(1, 1, 1) //长宽高
     ;
     const texture = new (0, _three.TextureLoader)().load((0, _dolJpgDefault.default)) //花纹
     ;
@@ -643,10 +643,21 @@ function init() {
 init();
 function render() {
     //动画
+    // if (mesh.position.x > 3) { 
+    // } else {
+    //   mesh.position.x += 0.01
+    // }
     renderer.render(scene, camera);
     requestAnimationFrame(render);
 }
 render();
+window.addEventListener("resize", function() {
+    //相机设置
+    camera.adpect = window.innerWidth / this.window.innerHeight;
+    camera.updateProjectionMatrix();
+    //renderer渲染器
+    renderer.setSize(window.innerWidth, window.innerHeight);
+});
 
 },{"three":"ktPTu","three/examples/jsm/controls/OrbitControls":"7mqRv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./public/dol.jpg":"iNBCV"}],"ktPTu":[function(require,module,exports) {
 /**
@@ -32328,41 +32339,6 @@ class OrbitControls extends (0, _three.EventDispatcher) {
 },{"three":"ktPTu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iNBCV":[function(require,module,exports) {
 module.exports = require("487009ee280f97d2").getBundleURL("lPpKD") + "dol.715341e3.jpg" + "?" + Date.now();
 
-},{"487009ee280f97d2":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-}
-// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}]},["gbXMy","bNKaB"], "bNKaB", "parcelRequire54e0")
+},{"487009ee280f97d2":"lgJ39"}]},["gbXMy","bNKaB"], "bNKaB", "parcelRequire54e0")
 
 //# sourceMappingURL=index.0641b553.js.map
