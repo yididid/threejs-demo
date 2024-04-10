@@ -27,7 +27,7 @@
 
 ![image](https://github.com/yididid/threejs-demo/assets/56509940/a9a07be2-cbb8-45b9-8d23-de56c39c0681)
 ![image](https://github.com/yididid/threejs-demo/assets/56509940/23a54e41-e74e-4974-869d-01cfd48a5f31)
-![image](https://github.com/yididid/threejs-demo/assets/56509940/8f79e496-b30e-495c-a8fa-5f9d6f709cdf)
+![1712729519858](https://github.com/yididid/threejs-demo/assets/56509940/eae00402-b335-4839-8122-6fcb3551ed4b)
 
 
 
